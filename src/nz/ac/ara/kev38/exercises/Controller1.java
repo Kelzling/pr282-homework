@@ -1,7 +1,8 @@
 package nz.ac.ara.kev38.exercises;
 
+// exercise controller inherits from Controller class
 class Controller1 extends Controller {
-	private Exercise1 ex1 = new Exercise1();
+	private CheckMark myModel = new CheckMark();
 	
 	public Controller1(IView theView) {
 		super(theView);
@@ -10,7 +11,8 @@ class Controller1 extends Controller {
 	@Override
 	public void doStuff() {
 		for (int i = 0; i <= 100; i++) {
-			this.myView.say("" + i + " = " + this.ex1.checkMark(i));
+			// using ConsoleView for output
+			this.myView.say("" + i + " = " + this.myModel.checkMark(i));
 		}
 	}
 }

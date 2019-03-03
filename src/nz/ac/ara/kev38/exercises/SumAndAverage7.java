@@ -1,10 +1,11 @@
 package nz.ac.ara.kev38.exercises;
 
-class Exercise10 extends Exercise4 {
+// model class
+class SumAndAverage7 extends SumAndAverage {
 	private int squaresSum;
 	private int squaresSumAverage;
 	
-	public Exercise10(int newMaxValue) {
+	public SumAndAverage7(int newMaxValue) {
 		super(newMaxValue);
 	}
 	

@@ -1,9 +1,9 @@
 package nz.ac.ara.kev38.exercises;
 
-class Exercise8 extends Exercise4 {
+class SumAndAverage5 extends SumAndAverage {
 	protected int count;
 	
-	public Exercise8(int newMaxValue) {
+	public SumAndAverage5(int newMaxValue) {
 		super(newMaxValue);
 	}
 	

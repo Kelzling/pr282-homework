@@ -1,7 +1,8 @@
 package nz.ac.ara.kev38.exercises;
 
-class Exercise6 extends Exercise4 {
-	public Exercise6 (int newMaxValue) {
+// model class
+class SumAndAverage2 extends SumAndAverage {
+	public SumAndAverage2(int newMaxValue) {
 		super(newMaxValue);
 	}
 	
@@ -9,10 +10,10 @@ class Exercise6 extends Exercise4 {
 	protected void setSum() {
 		int i = 0;
 		
-		do {
+		while (i <= this.maxValue) {
 			this.sum += i;
 			
 			i++;
-		} while (i <= this.maxValue);
+		}
 	}
 }

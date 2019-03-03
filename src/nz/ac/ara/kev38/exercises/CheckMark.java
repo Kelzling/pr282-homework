@@ -1,6 +1,8 @@
 package nz.ac.ara.kev38.exercises;
 
-public class Exercise1 {
+// model class
+// name casing conventions followed
+public class CheckMark {
 	public String checkMark(int mark) {
 		String result = "FAIL";
 		

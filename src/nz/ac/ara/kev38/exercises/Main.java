@@ -4,6 +4,7 @@ import nz.ac.ara.kev38.provided.*;
 
 public class Main {
 
+	// public main controller running each exercise
 	public static void main(String[] args) {
 		IView view = new ConsoleView();
 		

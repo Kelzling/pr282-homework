@@ -2,6 +2,7 @@ package nz.ac.ara.kev38.exercises;
 
 import java.io.IOException;
 
+// view interface for provided View class
 public interface IView {
 	// allow the user to input a string
 	// prompt is optional

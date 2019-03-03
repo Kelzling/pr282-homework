@@ -1,6 +1,7 @@
 package nz.ac.ara.kev38.exercises;
 
-public class Exercise2 {
+// model class
+public class CheckNumber {
 	public String checkNumber(int number) {
 		String result = "Even Number";
 		

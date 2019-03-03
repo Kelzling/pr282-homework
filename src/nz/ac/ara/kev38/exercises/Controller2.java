@@ -1,7 +1,9 @@
 package nz.ac.ara.kev38.exercises;
 
+// exercise controller extends controller class
 class Controller2 extends Controller {
-	private Exercise2 ex2 = new Exercise2();
+	// creates an instance of the model
+	private CheckNumber myModel = new CheckNumber();
 	
 	public Controller2(IView theView) {
 		super(theView);
@@ -10,7 +12,8 @@ class Controller2 extends Controller {
 	@Override
 	public void doStuff() {
 		for (int i = 0; i <= 100; i++) {
-			this.myView.say("" + i + " = " + this.ex2.checkNumber(i));
+			// using ConsoleView for output
+			this.myView.say("" + i + " = " + this.myModel.checkNumber(i));
 		}
 	}
 }

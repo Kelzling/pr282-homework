@@ -1,16 +1,19 @@
 package nz.ac.ara.kev38.exercises;
 
+// exercise controller extends provided controller
 class Controller8 extends Controller {
-	private Exercise8 ex8 = new Exercise8(100);
+	// builds an instance of the model class
+	private SumAndAverage5 myModel = new SumAndAverage5(100);
 	
 	public Controller8(IView theView) {
 		super(theView);
 	}
 	
 	protected void doStuff() {
-		this.ex8.calculateValues();
-		this.myView.say("The sum is " + this.ex8.getSum());
-		this.myView.say("The average is " + this.ex8.getAverage());
-		this.myView.say("The count of numbers was " + this.ex8.getCount());
+		this.myModel.calculateValues();
+		// uses console view for output
+		this.myView.say("The sum is " + this.myModel.getSum());
+		this.myView.say("The average is " + this.myModel.getAverage());
+		this.myView.say("The count of numbers was " + this.myModel.getCount());
 	}
 }

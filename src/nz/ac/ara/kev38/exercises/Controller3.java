@@ -1,7 +1,9 @@
 package nz.ac.ara.kev38.exercises;
 
+// exercise controller extends provided controller
 class Controller3 extends Controller {
-	private Exercise3 ex3 = new Exercise3();
+	// creates an instance of the model
+	private PrintWord myModel = new PrintWord();
 	
 	public Controller3(IView theView) {
 		super(theView);
@@ -10,9 +12,10 @@ class Controller3 extends Controller {
 	@Override
 	public void doStuff() {
 		for (int i = 0; i <= 10; i++) {
-			this.myView.say("" + i + " = " + this.ex3.printWordA(i));
+			// uses consoleview for output
+			this.myView.say("" + i + " = " + this.myModel.printWordA(i));
 			
-			this.myView.say("" + i + " = " + this.ex3.printWordB(i));
+			this.myView.say("" + i + " = " + this.myModel.printWordB(i));
 		}
 	}
 }

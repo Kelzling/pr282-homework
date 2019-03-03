@@ -1,11 +1,11 @@
 package nz.ac.ara.kev38.exercises;
 
-class Exercise4 {
+class SumAndAverage {
 	protected int sum;
 	protected double average;
 	protected int maxValue;
 	
-	public Exercise4 (int newMaxValue) {
+	public SumAndAverage (int newMaxValue) {
 		this.maxValue = newMaxValue;
 	}
 	
