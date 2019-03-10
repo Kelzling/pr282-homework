@@ -1,11 +1,10 @@
 package nz.ac.ara.kev38.exercises;
 
+import java.util.ArrayList;
+import java.util.List;
+
 class Product1ToN {
 	private int maxValue;
-	
-	public Product1ToN() {
-		this.maxValue = 10;
-	}
 	
 	public Product1ToN(int newMaxValue) {
 		this.maxValue = newMaxValue;
@@ -27,5 +26,17 @@ class Product1ToN {
 		}
 		
 		return product;
+	}
+	
+	public List<Integer> multipleProducts(int minProduct, int maxProduct) {
+		List<Integer> results = new ArrayList<Integer>();
+		
+		for (int i = minProduct; i <= maxProduct; i++) {
+			this.setMaxValue(i);
+			int product = this.product1ToN();
+			results.add(product);
+		}
+		
+		return results;
 	}
 }

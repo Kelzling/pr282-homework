@@ -19,7 +19,7 @@ public class ConsoleView implements IView {
 
          input = s.nextLine();
 
-         s.close();
+        //  s.close();
 
          return input;
 
@@ -35,7 +35,7 @@ public class ConsoleView implements IView {
     	
     	input = s.nextLine();
     	
-    	s.close();
+    	// s.close();
     	
     	return input;
     }
@@ -65,6 +65,8 @@ public class ConsoleView implements IView {
          System.in.read();
 
          System.out.println("bye!");
+         
+         
 
     }
 

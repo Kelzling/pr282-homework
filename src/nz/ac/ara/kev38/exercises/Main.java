@@ -42,7 +42,7 @@ public class Main {
 		// ex11Controller.go();
 		
 		Controller ex12Controller = new Controller12(view);
-		// ex12Controller.go();
+		ex12Controller.go();
 		
 		Controller ex13Controller = new Controller13(view);
 		// ex13Controller.go();
@@ -54,7 +54,7 @@ public class Main {
 		// ex15Controller.go();
 		
 		Controller ex16Controller = new Controller16(view);
-		ex16Controller.go();
+		// ex16Controller.go();
 	}
 
 }
